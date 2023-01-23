@@ -30,7 +30,7 @@ const Form = () => {
     const handleUserAdd = async (e) => {
         e.preventDefault()
         const { name, location, description, postImage, date, likes } = data
-        await fetch("http://localhost:4000/add", {
+        await fetch("https://instaclone-backend-txzw.onrender.com/add", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

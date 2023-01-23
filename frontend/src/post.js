@@ -5,7 +5,7 @@ const Post = () => {
     const [allPost, setAllPost] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:4000/posts")
+        fetch("https://instaclone-backend-txzw.onrender.com/posts")
             .then((res) => {
                 return res.json();
             })
